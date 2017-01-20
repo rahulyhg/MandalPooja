@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_ng2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            card_view:cardCornerRadius="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="@dimen/_16sdp"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:id="@+id/relativeLyoutForYaatraList"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingBottom="@dimen/_20sdp">
+
+                <Spinner
+                    android:id="@+id/spinnerForCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerForState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_below="@+id/spinnerForCountry"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerForCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_below="@+id/spinnerForState"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+            </RelativeLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--layout_anchorGravity="bottom|right"-->
+        <!--fabSize="auto"-->
+        <!--android:layout_marginTop="@dimen/_30sdp"-->
+        <!--android:backgroundTint="#cf3e3e"-->
+        <!--android:src="@drawable/form_submit"-->
+        <!--android:id="@+id/submitYaatraFab"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--layout_anchor="@+id/card_view"-->
+        <!--android:elevation="@dimen/_16sdp"-->
+        <!--android:layout_gravity="bottom|right" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout_anchorGravity="bottom|right"
+        fabSize="normal"
+        backgroundTint="#cf3e3e"
+        android:src="@drawable/form_submit"
+        android:id="@+id/submitYaatraFab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        elevation="@dimen/_6sdp"
+        layout_anchor="@+id/card_view"
+        android:layout_gravity="bottom|right" />
+
+
+
+
+</RelativeLayout>
+

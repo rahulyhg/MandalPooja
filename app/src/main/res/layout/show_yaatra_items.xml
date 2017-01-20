@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        card_view:cardCornerRadius="@dimen/_2sdp"
+        card_view:cardElevation="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainRelativeLayout">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mandalNameLayout"
+                android:background="#26A69A" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mandal Name :"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/mandalNameLabel"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABC MAndal"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/mandalName"
+                    android:layout_toRightOf="@+id/mandalNameLabel"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/guruSwamiNameLinearLayout"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/mandalNameLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GuruSwami Name :"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/guruswamiNameLabel"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="0.39"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pratik Sonawane"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/guruswamiName"
+                    android:layout_toRightOf="@+id/guruswamiNameLabel"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="0.33" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateOfMandalPoojaLinearLayout"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/guruSwamiNameLinearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Mandal Pooja :"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/dateOfMandalPoojaLabel"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="0.39" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15-Jan-2017"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/dateOfMandalPooja"
+                    android:layout_toRightOf="@+id/dateOfMandalPoojaLabel"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1.14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateOfYaatraLinearLayout"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/dateOfMandalPoojaLinearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Yaatra :"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/dateOfYaatraLabel"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="0.39" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-jan-2017"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/dateOfYaatra"
+                    android:layout_toRightOf="@+id/dateOfYaatraLabel"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1.14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateOfDarshanRelativeLayout"
+                android:layout_below="@+id/dateOfYaatraLinearLayout"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Darshan"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/dateOfDarshanlabel"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24-Jan-2016"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/dateOfDarshan"
+                    android:layout_toRightOf="@+id/dateOfDarshanlabel"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/colorBlack" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

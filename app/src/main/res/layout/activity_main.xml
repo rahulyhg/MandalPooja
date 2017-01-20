@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_ng2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/mainImageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/home_page_image" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/swamyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainImageLayout"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="GuruSwamy"
+            android:textColor="@color/btncolor"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/guruswamiImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swamyLabel"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:id="@+id/image1Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:src="@drawable/image1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image1"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="MadaSwamy"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image2Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image1Layout">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:src="@drawable/image2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image2"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="Vedachelam"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image3Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image2Layout">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:src="@drawable/image3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image3"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="Chandramani"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/guruswamiImageLayout"
+            android:paddingTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/companyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/_10sdp"
+                android:scrollHorizontally="true"
+                android:selectAllOnFocus="true"
+                android:shadowColor="#303F9F"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1.5"
+                android:text="SPPS System Pvt Ltd."
+                android:textColor="#F44336"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/purposeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/companyLabel"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Online School / College Attendance System.  Id Cards, Biometrics Machine."
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
